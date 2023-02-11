@@ -3,19 +3,17 @@ name = "viewrosreestr"
 version = "0.1.0"
 description = ""
 authors = ["Nikuma <ybr811@gmail.com>"]
-readme = "../README.md"
 packages = [{include = "app"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
-rosreestr2coord = "^4.1.6"
-fastapi = "^0.89.1"
+python = "^3.8"
+fastapi = "^0.91.0"
 uvicorn = {extras = ["standard"], version = "^0.20.0"}
-osmpythontools = "^0.3.5"
-
+rosreestr2coord = "^4.1.6"
 
 [tool.poetry.group.dev.dependencies]
-flake8 = "^6.0.0"
+flake8 = "<4.0.0"
+black = "^23.1.0"
 
 [build-system]
 requires = ["poetry-core"]
